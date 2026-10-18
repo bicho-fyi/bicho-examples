@@ -1,0 +1,9 @@
+node_modules/
+vendor/
+target/
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+_temp/

@@ -1,0 +1,24 @@
+{
+  "name": "bicho-examples",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Runnable examples for Bicho SDKs and Sentry error reporting",
+  "type": "module",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bicho-fyi/bicho-examples.git"
+  },
+  "homepage": "https://bicho.fyi",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "node": "node node/report.mjs",
+    "sentry": "node sentry-node/report.mjs",
+    "browser": "python3 -m http.server 8000 --bind 127.0.0.1",
+    "test": "node --test tests/javascript.test.mjs"
+  },
+  "dependencies": {
+    "@bicho-fyi/javascript": "1.1.0",
+    "@sentry/node": "11.8.0"
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "name": "bicho-fyi/example-php",
+    "description": "A plain PHP exception reporting example for Bicho.",
+    "type": "project",
+    "license": "Apache-2.0",
+    "require": {
+        "php": ">=8.2",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "bicho-fyi/php": "^1.0"
+    }
+}

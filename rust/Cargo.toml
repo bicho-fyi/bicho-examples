@@ -1,0 +1,12 @@
+[package]
+name = "bicho-example-rust"
+version = "1.0.0"
+edition = "2024"
+rust-version = "1.89"
+publish = false
+license = "Apache-2.0"
+repository = "https://github.com/bicho-fyi/bicho-examples"
+
+[dependencies]
+bicho = "=1.0.0"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }

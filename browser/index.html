@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bicho browser example</title>
+  <script src="../node_modules/@bicho-fyi/javascript/dist/bicho.min.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Bicho browser example</h1>
+    <p>Send one caught error to your Bicho project. Nothing is sent until you submit this form.</p>
+    <p>Use a public-key-only project. Never enter an ingest secret or admin token. Configuration stays in memory.</p>
+    <form autocomplete="off">
+      <p>
+        <label for="endpoint">OTLP endpoint (required)</label><br>
+        <input id="endpoint" name="endpoint" type="url" value="http://localhost:8787/v1/logs" required>
+      </p>
+      <p>
+        <label for="key">Public ingest key (required)</label><br>
+        <input id="key" name="key" type="text" placeholder="YOUR_PUBLIC_KEY" pattern="[A-Za-z0-9_\-]{1,128}" maxlength="128" required spellcheck="false" autocapitalize="none">
+      </p>
+      <button type="submit">Send one example error</button>
+    </form>
+    <p id="status" role="status" aria-live="polite">Ready. No error has been sent.</p>
+    <noscript>Enable JavaScript to run this example.</noscript>
+  </main>
+</body>
+</html>
