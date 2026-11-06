@@ -122,4 +122,4 @@ After installing the PHP dependencies and building Rust with `cargo build --lock
 
 ## License
 
-Copyright 2026 [Alex Zappa](https://alex.zappa.dev/) ([FreshJuice](https://freshjuice.dev/)). Licensed under Apache-2.0. See [LICENSE](LICENSE).
+Copyright 2026 [Alex Zappa](https://alex.zappa.dev/) ([FreshJuice](https://freshjuice.dev/)). Licensed under Apache-2.0. See [LICENSE](LICENSE) and [ACKNOWLEDGEMENTS.md](ACKNOWLEDGEMENTS.md).
